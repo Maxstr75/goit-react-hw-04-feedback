@@ -39,10 +39,10 @@ export function App() {
     return Math.round((good * 100) / total);
   };
 
-  const feedbacks = [good, neutral, bad];
+  const feedbacks = ['good', 'neutral', 'bad'];
 
   return (
-    <Container>
+    <>
       <Section title="Please leave feedback">
         <FeedbackOptions
           options={feedbacks}
@@ -62,6 +62,6 @@ export function App() {
           <Notification message="There is no feedback" />
         )}
       </Section>
-    </Container>
+    </>
   );
 }
