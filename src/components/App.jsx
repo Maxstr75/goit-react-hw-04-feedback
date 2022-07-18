@@ -42,7 +42,7 @@ export function App() {
   const feedbacks = ['good', 'neutral', 'bad'];
 
   return (
-    <>
+    <Container>
       <Section title="Please leave feedback">
         <FeedbackOptions
           options={feedbacks}
@@ -62,6 +62,6 @@ export function App() {
           <Notification message="There is no feedback" />
         )}
       </Section>
-    </>
+    </Container>
   );
 }
